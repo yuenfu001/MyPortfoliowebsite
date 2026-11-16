@@ -1,820 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>My Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: DevFolio
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chiko Liu Abdulsamad — Data Analyst, Public Health, M&E, BI and Backend Development.">
+  <title>Chiko Liu Abdulsamad | Data Analyst & Systems Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+  <div class="progress-bar" id="progressBar"></div>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home"><span>CL</span> Chiko Liu</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀︎</button>
+      </div>
+    </nav>
+  </header>
 
-      <h1 class="logo"><a href="index.html">My Portfolio</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">DATA ANALYST · M&E · BI · SOFTWARE DEVELOPMENT</p>
+          <h1>Turning complex data into <span class="gradient-text">useful decisions.</span></h1>
+          <p class="hero-text">
+            Data professional with 10+ years of experience across public health programmes,
+            health systems strengthening, analytics-driven performance management and practical data systems.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">Explore my work <span>↗</span></a>
+            <a class="btn secondary" href="#contact">Let's connect</a>
+          </div>
+          <div class="quick-stats">
+            <div><strong>10+</strong><span>Years experience</span></div>
+            <div><strong>4</strong><span>Core disciplines</span></div>
+            <div><strong>∞</strong><span>Curiosity</span></div>
+          </div>
+        </div>
+        <div class="hero-card reveal">
+          <div class="terminal">
+            <div class="terminal-top"><span></span><span></span><span></span><small>chiko.py</small></div>
+            <div class="terminal-body">
+              <p><span class="muted"># My approach</span></p>
+              <p><span class="key">data</span> = collect → clean → analyze</p>
+              <p><span class="key">insight</span> = data + context</p>
+              <p><span class="key">action</span> = insight → decision</p>
+              <p class="cursor">▌</p>
+            </div>
+          </div>
+          <div class="floating-chip chip-one">Python</div>
+          <div class="floating-chip chip-two">Power BI</div>
+          <div class="floating-chip chip-three">SQL</div>
+        </div>
+      </div>
+    </section>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          <!-- <li><a class="nav-link scrollto " href="#blog">Blog</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+    <section id="about" class="section">
+      <div class="container split">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / ABOUT</p>
+          <h2>Data is only useful when people can act on it.</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>
+            I work at the intersection of data analytics, public health, monitoring and evaluation,
+            business intelligence and software development.
+          </p>
+          <p>
+            My experience includes working with fragmented, multi-source and field-level datasets,
+            building dashboards and reports, improving data quality, and developing database-driven
+            applications and APIs that make operational information easier to use.
+          </p>
+          <p>
+            I am especially interested in practical projects where better data, better systems and
+            better analysis can improve decisions.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <section id="expertise" class="section alt-section">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">02 / EXPERTISE</p>
+          <h2>What I bring to the table.</h2>
+        </div>
+        <div class="expertise-grid">
+          <article class="feature-card reveal">
+            <span class="icon">⌁</span>
+            <h3>Data Analytics</h3>
+            <p>Cleaning, validation, transformation, descriptive analysis, trend analysis, reporting and decision support.</p>
+            <div class="tags"><span>Python</span><span>SQL</span><span>Excel</span><span>Pandas</span></div>
+          </article>
+          <article class="feature-card reveal">
+            <span class="icon">◫</span>
+            <h3>Business Intelligence</h3>
+            <p>Interactive dashboards, performance monitoring, data modelling and executive-ready reporting.</p>
+            <div class="tags"><span>Power BI</span><span>Power Query</span><span>Power Pivot</span></div>
+          </article>
+          <article class="feature-card reveal">
+            <span class="icon">＋</span>
+            <h3>Public Health & M&E</h3>
+            <p>Programme monitoring, field data, indicators, data quality, assessments and evidence-based decision-making.</p>
+            <div class="tags"><span>M&E</span><span>Research</span><span>Health Data</span></div>
+          </article>
+          <article class="feature-card reveal">
+            <span class="icon">{ }</span>
+            <h3>Backend & Data Systems</h3>
+            <p>Database-driven applications and APIs that connect operational processes with structured data.</p>
+            <div class="tags"><span>Django</span><span>Flask</span><span>FastAPI</span><span>REST APIs</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">03 / EXPERIENCE</p>
+          <h2>A decade of working with real-world data.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2025 — PRESENT</div>
+            <div class="timeline-content">
+              <h3>Executive Performance & Strategy Analyst</h3>
+              <p class="company">Phase3 Telecom</p>
+              <p>Operational and performance analysis, indicators, reporting and decision-support outputs across multiple data sources.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022 — 2025</div>
+            <div class="timeline-content">
+              <h3>BI, Planning & Operations Manager — B2C</h3>
+              <p class="company">P3Tech Africa</p>
+              <p>Business intelligence, operational planning, performance monitoring, dashboards and data-driven systems.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2017 — 2021</div>
+            <div class="timeline-content">
+              <h3>Public Health Consultant / M&E Officer</h3>
+              <p class="company">Solina Health</p>
+              <p>Field data, M&E, data quality, analysis, reporting, health-worker assessments and programme implementation cycles.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">CONSULTANCY</div>
+            <div class="timeline-content">
+              <h3>Data Systems · Research · Price Intelligence</h3>
+              <p class="company">ActionAid · Agridata Point · DAI</p>
+              <p>Consultancy assignments covering programme information, research data, quality checks and analytical outputs.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt-section">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">04 / SELECTED PROJECTS</p>
+          <h2>From data problems to working systems.</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top"><span class="project-number">01</span><span>API · DATA</span></div>
+            <h3>Business Location Intelligence</h3>
+            <p>A Google Maps API-powered application for finding businesses within geographic areas and producing downloadable structured business information.</p>
+            <div class="project-tags"><span>Python</span><span>API</span><span>Geolocation</span><span>Data</span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-top"><span class="project-number">02</span><span>BI · M&E</span></div>
+            <h3>Programme Performance Analytics</h3>
+            <p>Data workflows, indicators, dashboards and reports designed to help programme teams monitor performance and act on evidence.</p>
+            <div class="project-tags"><span>Power BI</span><span>Excel</span><span>M&E</span><span>SQL</span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-top"><span class="project-number">03</span><span>BACKEND · DATA</span></div>
+            <h3>Management Data Applications</h3>
+            <p>Database-driven applications for structured data capture, storage, retrieval, reporting and operational workflows.</p>
+            <div class="project-tags"><span>Django</span><span>Flask</span><span>FastAPI</span><span>PostgreSQL</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">05 / TOOLKIT</p>
+          <h2>Tools I work with.</h2>
+        </div>
+        <div class="skill-cloud reveal">
+          <span class="skill featured">Python</span><span class="skill featured">SQL</span>
+          <span class="skill featured">Power BI</span><span class="skill">Excel</span>
+          <span class="skill">Power Query</span><span class="skill">Power Pivot</span>
+          <span class="skill">Pandas</span><span class="skill">NumPy</span>
+          <span class="skill">PostgreSQL</span><span class="skill">MySQL</span>
+          <span class="skill">Django</span><span class="skill">Flask</span>
+          <span class="skill">FastAPI</span><span class="skill">REST APIs</span>
+          <span class="skill">Git</span><span class="skill">GitHub</span>
+          <span class="skill">Linux</span><span class="skill">Docker</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-card reveal">
+        <div>
+          <p class="eyebrow">06 / CONTACT</p>
+          <h2>Have a data problem worth solving?</h2>
+          <p>I'm open to consulting, project-based, remote and collaboration opportunities in data, public health, M&E, BI and data systems.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:your-email@example.com">Email me ↗</a>
+          <a class="btn secondary" href="#" id="copyEmail">Copy email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Chiko Liu Abdulsamad</p>
+      <div><a href="#">LinkedIn</a><a href="#">GitHub</a><a href="#">Portfolio</a></div>
     </div>
-  </header><!-- End Header -->
+  </footer>
 
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/liu.png)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">I am Chiko Liu Abdulsamad</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Data Analyst, Software Developer, Python Programmer"></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-        </div>
-      </div>
-    </div>
-  </div><!-- End Hero Section -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/img/passport.jpg" class="img-fluid rounded b-shadow-a" alt="" width="180" height="40">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><em><span class="title-s"> Name: </span> <span>Chiko Liu Abdulsamad</span></em></p>
-                        <p><em><span class="title-s">Profile: </span> <span>Data Analyst</span></em></p>
-                        <p><em><span class="title-s">Email: </span> <span>liuyuenfu@gmail.com</span></em></p>
-                        <p><em><span class="title-s">Phone: </span> <span>(234)806-538-2007</span></em></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s">SKILLS</p>
-                     <span><strong><em>Strategic Planning</em></strong></span> <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><strong><em>Data Analysis & Visualization</em></strong></span> <span class="pull-right">95%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><strong><em>Data Modeling</em></strong></span> <span class="pull-right">85%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><strong><em>Innovative Problem-Solving </em></strong></span> <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><strong><em>Communication</em></strong></span> <span class="pull-right">80%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><strong><em>Defining KPIs (Key Performance Indicators)</em></strong></span> <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><strong><em>Team Collaboration</em></strong></span> <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s">TOOLS</p>
-                    <span><strong><em>Microsoft Excel</em></strong></span> <span class="pull-right">85%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><strong><em>Power Query</em></strong></span> <span class="pull-right">75%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><strong><em>Microsoft Power BI</em></strong></span> <span class="pull-right">(70%)</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><strong><em>Google Sheet</em></strong></span> <span class="pull-right">(70%)</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><strong><em>ODK(Open-Data-Kit)Form Development</em></strong></span> <span class="pull-right">75%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                     <span><strong><em>SQL (Transact-SQL)</em></strong></span> <span class="pull-right">80%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><strong><em>Python Programming</em></strong></span> <span class="pull-right">80%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><strong><em>Django Web Framework</em></strong></span> <span class="pull-right">70%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
-                    </div>
-                    <p class="lead">
-                     I'm Chiko Liu, a seasoned professional with a dynamic 9-year+ career spanning across telecommunications, healthcare, and ICT industries. 
-                      My journey is defined by a relentless pursuit of excellence in strategic planning, 
-                      data analysis, and innovative problem-solving. Let me walk you through some highlights of my career and the value I bring to the table:
-                    </p>
-                    <p class="lead">
-                      <strong>Industry Expertise:</strong><br>
-                      <em>
-                      With hands-on experience in telecommunications, healthcare, and ICT sectors, 
-                      I bring a diverse perspective to the table. My ability to thrive in varied environments underscores my adaptability and versatility, 
-                      qualities crucial in today's fast-paced business landscape.
-                      </em>
-
-                    </p>
-                    <p class="lead">
-                      <strong>Track Record of Success: </strong><br>
-                     <em>
-                      Throughout my career, I've spearheaded numerous initiatives that have driven tangible results. 
-                      Whether it's orchestrating flawless broadband connectivity deployments or leading a successful Polio Outbreak Response program, 
-                      my focus has always been on delivering impactful outcomes and driving positive change.
-                     </em>
-                      
-                    <p class="lead">
-                      <strong>Data Analysis and BI Mastery: </strong><br>
-                      <em>
-                      Currently working as a Business Intelligence Analyst, 
-                      I've honed my skills in data analysis and visualization using cutting-edge BI tools. 
-                      My expertise in harnessing data-driven insights to power strategic decision-making processes 
-                      has been instrumental in optimizing performance and driving growth.                    
-                      </em>
-                    </p>
-                    <p class="lead">
-                      <strong>Innovative Problem-Solving:</strong><br>
-                   <em>
-                      I thrive on tackling complex challenges head-on and finding innovative solutions. 
-                      From optimizing financial performance to designing robust, data-driven web applications, 
-                      my approach is always rooted in creativity and forward-thinking.
-                   </em>
-                  </p>
-                    <p class="lead">
-                      <strong>Commitment to Quality and Sustainability: </strong><br>
-                    <em>
-                      My dedication to ensuring data quality and conducting meticulous analysis is unwavering.
-                      I firmly believe in the importance of sustainability and environmental monitoring, 
-                      and I'm passionate about leveraging data to drive positive change in these areas.
-                    </em>
-
-                  <p class="lead"> 
-                    <strong>Continuous Learning and Growth: </strong><br>
-                    <em>
-                    As I look towards the future,
-                      I'm committed to continuous learning and growth.
-                      Whether it's refining my communication skills or exploring new technologies,
-                      I'm always eager to expand my horizons and stay ahead of the curve.
-                    </em>
-                  </p>
-                  <p class="lead"> 
-                    <em>
-                    Thank you for taking the time to explore my portfolio. 
-                    I'm excited about the opportunity to collaborate and contribute to meaningful projects that make a difference. 
-                    Let's connect and explore how we can work together to achieve success!
-                    </em>
-                  </p>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Services
-              </h3>
-              <p class="subtitle-a">
-                Below are some services I can offer
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Data Analysis</h2>
-                <p class="s-description text-center">
-                     <em>
-                       Data Analysis & Insight Generation, Data Cleaning and Preparation, Data visualization, Data Modelling, 
-                  Report Automation, Data Integration, Market Research and Competitive Analysis, Scenario Analysis, P&L Analysis, Capacity Building.
-                     </em>
-                 
-                </p>
-              </div>
-            </div>
-          </div>
-         
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Data Collection Tool Development & Deployment</h2>
-                <p class="s-description text-center">
-                  <em>
-                    Custom Form Development, Tool Configuration and Setup, Workflow Automation, 
-                      Mobile Data Collection App Development, 
-                      Remote data access and analysis, Training and support
-                  </em>
-                </p>
-              </div>
-            </div>
-          </div>
-           <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Development</h2>
-                <p class="s-description text-center">
-                  <em>
-                    Data Visualization Dashboard Development, Data-driven Web Applications, Back-end web development, Custom Reporting Solutions, 
-                    Secure authentication systems, Database Optimization, Data Migration and Management
-                  </em>
-    
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title"><em>Training</em></h2>
-                <p class="s-description text-center">
-                      <em>
-                        Microsoft Excel Training, Power Query and BI Training, SQL Training, Python programming, Django Back-End Web development Training, 
-                        Data collection Tool development&deployment Training
-                      </em>
-                </p>
-              </div>
-            </div>
-          </div>
-          
-         
-        </div>
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">WORKS COMPLETED</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">TOTAL CLIENTS</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-award"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">AWARD WON</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Counter Section -->
-     <!-- ======= Portfolio Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Portfolio
-              </h3>
-              <p class="subtitle-a">
-                Below are some of my projects
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/taskmanager.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/taskmanager.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Task manager</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Data Analytics/Project Management</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="index.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/taskmanager.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/taskmanager.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Result Management System</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Data Analytics</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="rms.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/descripancy.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/descripancy.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Descrepancy Analysis</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Data Analytics</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="index.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/customer-seg.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/customer-seg.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Geolocation Segmentation for Targeted Client Engagement</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Data Analytics</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="churned-client-seg-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/db-migration.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/db-migration.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h3 class="w-title">Streamlining Database Operations with Python and MySQL</h3>
-                    <div class="w-more">
-                      <span class="w-ctegory">Data Analytics</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="db-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/d-sql-app.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/d-sql-app.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Django SQL Query App</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Development</span> / <span class="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="d-sql-app.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/barbedos.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/barbedos.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Logistics Management System</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Development</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="barbedos.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/queryquest.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/queryquest.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Location Generator</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Development</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://www.queryquests.com"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/patient-contact.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/patient-contact.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Dental Practice Management Application</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">web Development</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="clinic.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/restAPI.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/restAPI.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">MyAPI - Django RESTful API for Person Management</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">web Development</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="restful.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Flask API for Real-Time Information Retrieval</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">web Development</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="endpoint.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-         
-         
-
-        </div>
-      </div>
-    </section><!-- End Portfolio Section -->
-
-   
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send Message Us
-                      </h5>
-                    </div>
-                    <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                       
-                      </p>
-                      <ul class="list-ico">
-                        
-                        <li><span class="bi bi-phone"></span> (080) 65-382007</li>
-                        <li><span class="bi bi-envelope"></span> liuyuenfu@gmail.com</li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href="https://www.linkedin.com/in/liuchiko/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                        <li><a href="https://github.com/yuenfu001"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
-                        <li><a href="https://www.youtube.com/@CodeAnalyticsinAction"><span class="ico-circle"><i class="bi bi-youtube"></i></span></a></li>
-                      </ul>
-                    
-                    </div>
-                  
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Contact Section -->
-    
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright All Rights Reserved</p>
-            <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-            -->
-             
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-  
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast">Email copied.</div>
+  <script src="js/script.js"></script>
 </body>
-
 </html>
